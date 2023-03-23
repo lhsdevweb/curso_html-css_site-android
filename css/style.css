@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@font-face {font-family: 'idroid'; src: url('../fonte/idroid.otf') format('opentype');}
+/* * { margin: 0px; padding: 0px } */
+:root {--fontpadrao: 'Courier New', Courier, monospace; --fontdroid: 'idroid';
+        --fontarial: Arial, Helvetica, sans-serif; --fontfooter: Verdana, Geneva, Tahoma, sans-serif;
+        --cor1: green; --cor2: white; --cor3: greenyellow; --cor4: yellow; --cor5: black}
+
+body {background-color: rgb(221, 208, 208); margin: 0px;}
+.linkexterno::after {content: '\00A0\1F517';}
+
+/* CABEÇALHO */
+header {background-color: var(--cor1); color: var(--cor2); font-family: var(--fontarial);
+        min-height: 150px; text-align: center; padding-top: 40px;}
+h1 {text-shadow: 4px 4px 2px black; margin-top: 0px;} 
+#slogan {font-weight: bold; margin-top: 10px; margin-bottom: 0px; padding-bottom: 30px;}
+
+/* MENU */
+nav {background-color: var(--cor1); font-family: var(--fontarial); padding-bottom: 5px;} 
+nav a {color: var(--cor3); margin: 20px; text-decoration: none; font-weight: bold;}
+nav a:hover {background-color: var(--cor3); color: var(--cor1); padding: 5px;}
+
+/* CONTEÚDO */
+main {font-family: var(--fontpadrao);}
+h2 {font-family: var(--fontdroid) ; font-size: 2em}
+h3 {font-family: var(--fontdroid); font-size: 1.5em; color: var(--cor1); background-color: var(--cor3);}
+
+/* RODAPÉ */
+footer {background-color: var(--cor1); color: var(--cor2); margin: 2px 0px; padding: 2px; 
+        text-align: center; font-family: var(--fontfooter);}
+#curso {color: var(--cor4); text-decoration: none;}
+#curso:hover {text-decoration: underline;}
