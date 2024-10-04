@@ -25,7 +25,29 @@ h2 {font-family: var(--fontdroid) ; font-size: 2em}
 h3 {font-family: var(--fontdroid); font-size: 1.5em; color: var(--cor1); background-color: var(--cor3);}
 
 /* RODAPÉ */
-footer {background-color: var(--cor1); color: var(--cor2); margin: 2px 0px; padding: 2px; 
-        text-align: center; font-family: var(--fontfooter);}
-#curso {color: var(--cor4); text-decoration: none;}
-#curso:hover {text-decoration: underline;}
+footer {background-color: var(--cor1); color: var(--cor2); font-family: var(--fontfooter); padding: 20px 0;}
+footer a {color: var(--cor4); text-decoration: none;}
+footer a:hover {text-decoration: underline;}
+
+footer div {display: flex; justify-content: center; align-items: center; height: 25px;}
+#paragrafo3 {display: none;}
+#paragrafo4 {display: none;}
+
+@media (max-width: 850px) {
+  #paragrafo2 {display: none;}
+  #paragrafo3 {display: block;}
+  #paragrafo3 div {display: flex; justify-content: center;}
+  footer {padding-bottom: 50px;}
+}
+
+@media (max-width: 600px) {
+  footer {font-size: .7em;}
+}
+
+@media (max-width: 410px) {
+  #paragrafo1 {display: block; text-align: center;}
+  #paragrafo1 .espaço {display: none;}
+  #paragrafo3 {display: none;}
+  #paragrafo4 {display: block;}
+  #paragrafo4 div {display: flex; justify-content: center;}
+}
