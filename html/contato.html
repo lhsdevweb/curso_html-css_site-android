@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato - Mundo Tech - Curso em Video</title>
+        <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="../css/style.css">
+        <style>
+            html, body {margin: 0; padding: 0;}
+            body {display: flex; flex-direction: column; height: 100vh;}
+            main {height: 100%; text-align: center;} 
+            main div {display: inline;}
+            main a {font-weight: bolder; text-decoration: none; margin: 0px 10px 0px 0px;}
+            main a:hover {text-decoration: underline;}
+            h2 {color: var(--cor5)}
+            #email {margin-left: 50px;}
+            /*
+                #zap {margin: 0px 10px 0px 300px;}
+                #email {margin: 0px 10px 0px 50px;}
+                h2 {font-size: large;}
+            */
+            @media (max-width: 760px) {
+                main div {display: block;}
+                #email {margin: 20px 0 0 0;}
+            }
+            @media (max-width: 500px) {
+                .slogan {font-size: small;} 
+            }
+            @media (max-width: 350px) {
+                .slogan {font-size: .7em;} 
+            }
+        </style>
+    </head>
+    <body onresize="mostraMenu()">
+        <header>
+            <h1>Mundo Tech</h1>
+            <div class="slogan slogan1"> <!-- com <p> não funciona -->
+                <div>Tudo aquilo que você sempre quis saber sobre curiosidades </div>
+                <div>do mundo da tecnologia, em um único lugar!</div>
+            </div>
+            <div class="slogan slogan2"> <!-- com <p> não funciona -->
+                <div>Tudo aquilo que você sempre quis saber</div>
+                <div>sobre curiosidades do mundo da tecnologia,</div>
+                <div>em um único lugar!</div>
+            </div>
+        </header>
+        <span id="IconeMenu" class="material-icons" onclick="clicaIconeMenu()">menu</span>
+        <nav id="ItensMenu">
+            <a href="../index.html">Home</a>
+            <a href="noticias.html">Notícias</a>
+            <a href="curiosidades.html">Curiosidades</a>
+            <a href="contato.html">Fale Conosco</a>
+        </nav>
+        <main>
+            <h2>Entre em Contato</h2>
+            <div>
+                <img id="zap" src="../imagens/zap.png" alt="whatsapp">(81) 9.9258-9122 - Fone/WhatsApp
+            </div>
+            <div>
+                <img id="email" src="../imagens/email.png" alt="email">
+                <a href="mailto:humberto496@hotmail.com">mundotech@hotmail.com</a>- E-mail
+            </div>
+        </main>
+        <footer>
+            <div id="paragrafo1">
+                <p>&copy;2023 Desenvolvido por LHS DevWeb.</p>
+                <p class="espaço">&nbsp</p>
+                <p>Todos os direitos reservados.</p>
+            </div>
+            <div id="paragrafo2">
+                <p>Curso Online pelo</p>
+                <p class="espaço">&nbsp</p>
+                <p><a href="https://www.cursoemvideo.com/" target="_blank">Curso em Video</a></p>
+                <p class="traço">&nbsp-&nbsp</p>
+                <p>Curso de</p>
+                <p class="espaço">&nbsp</p>
+                <p>
+                    <a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1" target="_blank">
+                        HTML5 e CSS3
+                    </a>
+                </p>
+                <p class="espaço">&nbsp</p>
+                <p>com o professor</p>
+                <p class="espaço">&nbsp</p>
+                <p>
+                    <a href="https://github.com/gustavoguanabara/html-css/tree/master" target="_blank">
+                        Gustavo Guanabara
+                    </a>
+                </p>
+            </div>
+            <div id="paragrafo3"><!-- 2º parágrafo em duas linhas -->
+                <div>
+                    <p>Curso Online pelo</p>
+                    <p class="espaço">&nbsp</p>
+                    <p><a href="https://www.cursoemvideo.com/" target="_blank">Curso em Video</a></p>
+                    <p class="traço">&nbsp-&nbsp</p>
+                    <p>Curso de</p>
+                    <p class="espaço">&nbsp</p>
+                    <p>
+                        <a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1" target="_blank">
+                            HTML5 e CSS3
+                        </a>
+                    </p>
+                </div>
+                <div>
+                    <p>com o professor</p>
+                    <p class="espaço">&nbsp</p>
+                    <p>
+                        <a href="https://github.com/gustavoguanabara/html-css/tree/master" target="_blank">
+                            Gustavo Guanabara
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div id="paragrafo4"><!-- 2º parágrafo em três linhas -->
+                <div>
+                    <p>Curso Online pelo</p>
+                    <p class="espaço">&nbsp</p>
+                    <p><a href="https://www.cursoemvideo.com/" target="_blank">Curso em Video</a></p>
+                </div>
+                <div>
+                    <p>Curso de</p>
+                    <p class="espaço">&nbsp</p>
+                    <p>
+                        <a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1" target="_blank">
+                            HTML5 e CSS3
+                        </a>
+                    </p>
+                </div>
+                <div>
+                    <p>com o professor</p>
+                    <p class="espaço">&nbsp</p>
+                    <p>
+                        <a href="https://github.com/gustavoguanabara/html-css/tree/master" target="_blank">Gustavo Guanabara</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script>
+            function mostraMenu() 
+            {
+                if (window.innerWidth > 520)
+                    {ItensMenu.style.display = 'block'}
+                else
+                    {ItensMenu.style.display = 'none'}
+            }
+            function clicaIconeMenu() 
+            {
+                if (ItensMenu.style.display == 'block') 
+                    {ItensMenu.style.display = 'none'}
+                else
+                    {ItensMenu.style.display = 'block'}
+                    {ItensMenu.style.padding = 0}
+            }
+        </script>
+    </body>
+</html>
