@@ -74,7 +74,7 @@ footer div {display: flex; justify-content: center; align-items: center; height:
   #ItensMenu a:hover {text-decoration: underline; padding: 10px;
                       color: var(--cor2); background-color: var(--cor1);} 
   
-  aside ul {flex-direction: column; margin-left: 10%; padding-top: 20px;}
+  aside ul {flex-direction: column; margin-left: 10%;}
   /*
     aside ul {display: block;} - não funciona, mas deveria - 
   */
