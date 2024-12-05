@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@font-face {font-family: 'idroid'; src: url('../fonte/idroid.otf') format('opentype');}
+:root {--fontpadrao: 'Courier New', Courier, monospace; --fontdroid: 'idroid';
+        --fontarial: Arial, Helvetica, sans-serif; --fontfooter: Verdana, Geneva, Tahoma, sans-serif;
+        --cor1: green; --cor2: white; --cor3: greenyellow; --cor4: yellow; --cor5: black}
+
+body {background-color: rgb(221, 208, 208); margin: 0px;}
+.linkexterno::after {content: '\00A0\1F517';}
+
+/* CABEÇALHO 
+#slogan {margin: 20px;} 
+header div {display: inline; font-weight: bold;}
+*/
+header {background-color: var(--cor1); color: var(--cor2); font-family: var(--fontarial);
+        min-height: 150px; text-align: center; padding-top: 40px;}
+h1 {text-shadow: 4px 4px 2px black; margin-top: 0px;} 
+.slogan {font-weight: bold;} 
+.slogan1 div {display: inline;}
+.slogan2 {display: none;}
+
+/* MENU */
+nav {background-color: var(--cor1); font-family: var(--fontarial); padding-bottom: 5px; margin: 0;} 
+nav a {color: var(--cor3); margin: 20px; text-decoration: none; font-weight: bold;}
+nav a:hover {background-color: var(--cor3); color: var(--cor1); padding: 5px;}
+
+#IconeMenu {display: none} 
+#ItensMenu a {padding: 5px 10px;} 
+#ItensMenu a:hover {font-weight: bolder;}
+/* FIM MENU */
+
+/* CONTEÚDO */
+main {font-family: var(--fontpadrao); width: fit-content; padding: 0 20px; margin: auto;}
+h2 {font-family: var(--fontdroid) ; font-size: 2em}
+h3 {font-family: var(--fontdroid); font-size: 1.5em; color: var(--cor1); background-color: var(--cor3);}
+article > p {display: none;}
+
+/* RODAPÉ */
+footer {background-color: var(--cor1); color: var(--cor2); font-family: var(--fontfooter);
+        padding: 20px 0; margin: 0;}
+footer a {color: var(--cor4); text-decoration: none;}
+footer a:hover {text-decoration: underline;}
+
+footer div {display: flex; justify-content: center; align-items: center; height: 25px;}
+#paragrafo3 {display: none;}
+#paragrafo4 {display: none;}
+
+@media (max-width: 900px) {
+  .slogan1 div {display: block;}
+}
+@media (max-width: 850px) {
+  footer {padding-bottom: 50px;}
+  #paragrafo2 {display: none;}
+  #paragrafo3 {display: block;}
+  #paragrafo3 div {display: flex; justify-content: center;}
+}
+@media (max-width: 600px) {
+  footer {font-size: .7em;}
+  nav a {margin: 0;}
+}
+@media (max-width: 520px) {
+  .slogan1 {display: none;} .slogan2 {display: block;}
+
+  h2, h3 {font-size: 1.4em;}
+
+  #IconeMenu {display: block; text-align: center; padding: 5px; border: solid 1px white;
+              background-color: green; color: white;}
+  #IconeMenu:hover {cursor: pointer;}
+
+  #ItensMenu {display: none;}
+  #ItensMenu a {display: block; text-decoration: none; padding: 10px; font-weight: bolder; 
+                  border-top: 2px solid darkgray; text-align: center;
+                  background-color: var(--cor2); color: var(--cor1);}
+  #ItensMenu a:hover {text-decoration: underline; padding: 10px;
+                      color: var(--cor2); background-color: var(--cor1);} 
+  
+  aside ul {flex-direction: column; margin-left: 10%; padding-top: 20px;}
+  /*
+    aside ul {display: block;} - não funciona, mas deveria - 
+  */
+}
+@media (max-width: 420px) {
+  aside ul {margin-left: 5%; padding-top: 10px;}
+  #paragrafo1 {display: block; text-align: center;}
+  #paragrafo1 .espaço {display: none;}
+  #paragrafo3 {display: none;}
+  #paragrafo4 {display: block; margin: 20px 0;}
+  #paragrafo4 div {display: flex; justify-content: center;}
+}
